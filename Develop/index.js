@@ -28,9 +28,19 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What are the Installation steps?',
+        message: 'Provide screenshot/video: ',
+        name: 'screenshot',
+    },
+    {
+        type: 'input',
+        message: 'What are the Installation steps? What commands need to be run to install dependencies?',
         name: 'installation'
     },
+    {
+        type: 'input',
+        message: 'What command needs to be run to start tests?',
+        name: 'command'
+    }, 
     {
         type: 'input',
         message: 'Provide instructions for use of your project',
@@ -44,23 +54,30 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'What type of license should your project have?',
-        choices:[
-            'mit',
-            'apache2.0', 
-            'unlicense', 
-            'mpl2.0', 
-            'None'
-        ]
+        message: 'Choose your license: ',
+        choices: ['MIT', 'Apache 2.0', 'GNU GPL v3', 'mpl2.0', 'None']
     },
+
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log('You have successfully created a README file!'))
+}
+
+
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions)
+    .then((data) => {
+            console.log(data)
+        writeFile('README.md', generateMarkdown(data))
+    })
+}
 
 // Function call to initialize app
 init();
