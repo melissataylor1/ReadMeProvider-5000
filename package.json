@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/melissataylor1/ReadMeProvider-5000/issues"
   },
-  "homepage": "https://github.com/melissataylor1/ReadMeProvider-5000#readme"
+  "homepage": "https://github.com/melissataylor1/ReadMeProvider-5000#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
