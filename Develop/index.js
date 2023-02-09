@@ -28,18 +28,20 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide screenshot/video: ',
+        message: 'Provide relative path or eternal link to any photos/videos: ',
         name: 'screenshot'
     },
     {
         type: 'input',
         message: 'What are the Installation steps? What commands need to be run to install dependencies?',
-        name: 'installation'
+        name: 'installation',
+        default: ('npm i inquirer@8.2.4')
     },
     {
         type: 'input',
         message: 'What command needs to be run to start tests?',
-        name: 'command'
+        name: 'test',
+        default: ('npm test')
     }, 
     {
         type: 'input',
@@ -49,7 +51,7 @@ const questions = [
     {
         type: 'input',
         message: 'List any credits you may have fopr this project (collaborators, 3rd party assets, tutorials, etc)',
-        name: 'credit'
+        name: 'credits'
     },
     {
         type: 'list',

@@ -61,14 +61,11 @@ function generateMarkdown(data) {
 
   [${data.license}]${renderLicenseLink(data.license)}
 
-  ##  Description
-  ${data.description}
-  ${data.description}
-  ${data.description}
-  ${data.description}
+  ## Description
+  ${data.motivation}
+  ${data.solution}
+  ${data.learn}
 
+  ## Screenshot of Project
+  ${data.screenshot}
 
-`;
-}
-
-module.exports = generateMarkdown;
