@@ -63,7 +63,8 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  [${data.license}]${renderLicenseLink(data.license)}
+  [${data.license}]
+  ${renderLicenseLink(data.license)}
 
   ## Description
   ${data.motivation}
@@ -102,10 +103,9 @@ Run the following command to start tests:
  ${data.usage}
  
  
- ## License
- ${section}  
+ ## License 
  This project is licensed under the ${data.license} license.
- [${data.license}]${renderLicenseBadge (data.license)}
+ ${renderLicenseBadge (data.license)}
  
  
  ## Credits
