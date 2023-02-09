@@ -55,8 +55,12 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+
+
 function generateMarkdown(data) {
-  return `
+  const section = renderLicenseSection(data);
+  const readmeText = `
+  
   # ${data.title}
 
   [${data.license}]${renderLicenseLink(data.license)}
@@ -99,7 +103,7 @@ Run the following command to start tests:
  
  
  ## License
-
+ ${section}  
  This project is licensed under the ${data.license} license.
  [${data.license}]${renderLicenseBadge (data.license)}
  
@@ -113,9 +117,10 @@ Run the following command to start tests:
  ## Questions
 
  If you have any questions about the project, contact me at [${data.email}](mailto:${data.email}). 
- 
+
  You can find my other Github work at: [${data.username}](https://github.com/${data.username}).`;
 
+ return readmeText;
 }
 
 module.exports = generateMarkdown;
