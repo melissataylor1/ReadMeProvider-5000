@@ -7,14 +7,14 @@ const questions = [
     
     {
         type: 'input',
-        name: 'projecttitle',
-        message: 'What is title of your project?'
+        message: 'What is title of your project?',
+        name: 'title'
     },
     //Description Steps 1-4
     {
         type: 'input',
         message: 'What was your motivation for this project?',
-        name: 'motivation',
+        name: 'motivation'
     },
     {
         type: 'input',
@@ -29,7 +29,7 @@ const questions = [
     {
         type: 'input',
         message: 'Provide screenshot/video: ',
-        name: 'screenshot',
+        name: 'screenshot'
     },
     {
         type: 'input',
@@ -55,17 +55,26 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose your license: ',
-        choices: ['MIT', 'Apache 2.0', 'GNU GPL v3', 'mpl2.0', 'None']
+        choices: ['MIT', 'Apache 2.0', 'GNU GPL v3', 'MPL2.0', 'None']
+    },
+    {
+        type: 'input',
+        message: 'Enter your Github username: ',
+        name: 'username'
+    },
+    {
+        type: 'input',
+        message: 'Enter your email: '
+        name: 'email',
     },
 
 
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log('You have successfully created a README file!'))
+    err ? console.log(err) : console.log('Your README file has been created!'))
 }
 
 
