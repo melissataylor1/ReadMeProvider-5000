@@ -69,3 +69,48 @@ function generateMarkdown(data) {
   ## Screenshot of Project
   ${data.screenshot}
 
+ ## Table of Contents 
+ 
+ [Installation](#Installation)
+ [Tests](#Test)
+ [Usage](#Usage)
+ [License](#License)
+ [Credits](#Credits)
+
+  [Questions](#Questions)
+ 
+ 
+ ## Installation 
+
+ To install any necessary dependencies for this project, run the following command in your terminal:
+ 
+ ${data.installation}
+ 
+  
+ ## Tests
+
+Run the following command to start tests:
+ 
+ ${data.test}
+ 
+ ## Usage 
+ ${data.usage}
+ 
+ 
+ ## License
+ This project is licensed under the ${data.license} license.
+ [${data.license}]${renderLicenseBadge (data.license)}
+ 
+ 
+ ## Credits
+ ${data.credits}
+ 
+
+ 
+ ## Questions
+ If you have any questions about the project, contact me at [${data.email}](mailto:${data.email}). 
+ You can find my other Github work at: [${data.username}](https://github.com/${data.username}).`;
+
+}
+
+module.exports = generateMarkdown;
