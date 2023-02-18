@@ -1,16 +1,17 @@
 
   
-  # Mels Test
+  # mels project
 
-  [MIT]https://opensource.org/licenses/MIT
+
+  MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  WAnted to try node
-  Helping me understand Node and backend better
-  Learned abot Node funcionality
+  compelting assignmnet
+  getting a good grade
+  to use screencastify
 
   ## Screenshot of Project
-  N/A
+  n/a
 
  ## Table of Contents 
  
@@ -38,17 +39,18 @@ Run the following command to start tests:
  
  ## Usage 
 
- Type in above commands and then node and index.js
+ node index.js in terminal to use
  
  
  ## License 
  This project is licensed under the MIT license.
- [MIT][![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
  
  ## Credits
 
- School taught me
+ me and bootcamp
  
 
  
